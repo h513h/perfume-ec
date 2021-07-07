@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="scss/all.css"/>
+    <title>Perfume - Log in</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid container-md"><a class="navbar-brand" href="index.html">
+          <h1><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfume.png?raw=true" alt="logo"/></h1></a>
+        <div><a class="nav-link position-relative d-inline-block d-md-none p-0 me-5" href=""><span class="material-icons text-secondary">shopping_cart</span><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">3</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="material-icons text-secondary">menu</span></button>
+        </div>
+        <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link order order-md-1" href="shop.html"><span class="d-none d-md-inline material-icons">store</span>Product </a></li>
+            <li class="nav-item"><a class="nav-link order-md-3" href="#"><span class="d-none d-md-inline material-icons">favorite</span>Wishlist</a></li>
+            <li class="nav-item d-md-none d-inline-block"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item d-md-none d-inline-block"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link order-md-2" href="login.html"><span class="d-none d-md-inline material-icons">person</span>log in</a></li>
+            <li class="nav-item d-none d-md-inline-block"><a class="nav-link position-relative order-md-4" href="#"><span class="material-icons">shopping_cart</span>Cart (3)</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid bg-primary d-none d-md-block">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">CHANEL</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Jo Malone</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Curology</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Dior</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Chloe</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">ZARA</a></li>
+        </ul>
+      </div>
+    </section>
+    <main class="container login card pt-8 pb-7">
+      <div class="row align-items-center">
+        <div class="col-md-8 mb-3">
+          <div class="img bgi-center-cover ratio" style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/login1.jpg?raw=true')"></div>
+        </div>
+        <div class="col-md-4">
+          <h2 class="font-size-lg mb-3">Log in</h2>
+          <form>
+            <label class="form-label mb-1" for="email">帳號</label>
+            <input class="form-control mb-3" type="email" id="email"/>
+            <label class="form-label mb-1" for="password">密碼</label>
+            <input class="form-control mb-3 mb-sm-5" type="password" id="password"/>
+            <div class="d-flex justify-content-between align-items-center"><a class="font-size-sm stretched-link" href="#">忘記密碼</a>
+              <ul class="d-flex">
+                <li class="me-1"><a class="btn btn-outline-primary" href="menber.html">註冊</a></li>
+                <li><a class="btn btn-primary" href="menber.html">登入</a></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-primary">
+      <div class="container-fluid container-sm footer">
+        <div class="row justify-content-between h-100 align-items-center">
+          <div class="col">
+            <div class="d-flex justify-content-between justify-content-md-start"><a class="navbar-brand d-inline-blick" href="index.html">
+                <h1><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfumewhite.png?raw=true" alt="logo"/></h1></a>
+              <div class="d-inline-block align-self-center text-white text-nowrap">© 2020. All Rights Reserved.</div>
+            </div>
+          </div>
+          <div class="col d-none d-md-flex justify-content-end align-items-center">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link text-white" href="shop.html">Product</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>

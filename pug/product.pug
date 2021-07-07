@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="scss/all.css")
+        title Perfume - product
+    body
+        //- navbar
+        nav.navbar.navbar-expand-md.navbar-light
+            .container-fluid.container-md
+                a(href="index.html").navbar-brand
+                    h1
+                        img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfume.png?raw=true", alt="logo")
+                div
+                    a.nav-link.position-relative.d-inline-block.d-md-none.p-0.me-5(href="")
+                        span.material-icons.text-secondary shopping_cart
+                        span.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-primary 3
+                    button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
+                        span.material-icons.text-secondary menu
+                .collapse.justify-content-end.navbar-collapse#navbarNav
+                    ul.navbar-nav.text-center
+                        li.nav-item
+                            a.nav-link.order.order-md-1(href="shop.html") #[span.d-none.d-md-inline.material-icons store]Product 
+                        li.nav-item
+                            a.nav-link.order-md-3(href="#") #[span.d-none.d-md-inline.material-icons favorite]Wishlist
+                        li.nav-item.d-md-none.d-inline-block
+                            a.nav-link(href="#") Blog
+                        li.nav-item.d-md-none.d-inline-block
+                            a.nav-link(href="#") Contact
+                        li.nav-item
+                            a.nav-link.order-md-2(href="login.html") #[span.d-none.d-md-inline.material-icons person]log in
+                        li.nav-item.d-none.d-md-inline-block
+                            a.nav-link.position-relative.order-md-4(href="#") #[span.material-icons shopping_cart]Cart (3)
+
+        //- catalog
+        section.container-fluid.bg-primary.d-none.d-md-block
+            .container
+                ul.nav
+                    li.nav-item
+                        a.nav-link(href="#") CHANEL
+                    li.nav-item
+                        a.nav-link(href="#") Jo Malone
+                    li.nav-item
+                        a.nav-link(href="#") Curology
+                    li.nav-item
+                        a.nav-link(href="#") Dior
+                    li.nav-item
+                        a.nav-link(href="#") Chloe
+                    li.nav-item
+                        a.nav-link(href="#") ZARA
+        
+        //-  main
+        main.container.card.product.pt-8.pb-7
+            .row.d-md-none
+                .col.product-img.product-img-xs.mb-4
+                    .img.bgi-center-cover(style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product1.jpg?raw=true')")
+
+            .row
+                .col-md-4.order-md-2
+                    .card-body
+                        h2.card-title.font-size-lg CHANEL N°5
+                        p.card-text.font-size-base N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。
+
+                    .card-body.mb-8
+                        p.card-text.font-size-base.mb-3 NT$4,980
+                        .input-group.mb-2
+                            input(type="number" aria-describedby="qty" min="1" value="1").form-control.col-6
+                            button(data-bs-toggle="offcanvas" data-bs-target="#addCar" aria-controls="addCar").col-6.btn.btn-primary 加入購物車
+                        a.font-size-sm.link-dark.d-flex.align-items-center(data-bs-toggle="offcanvas" data-bs-target="#addWish" aria-controls="addWish") #[span.material-icons.text-primary favorite] 加入我的收藏
+
+                    .card-body.mb-3
+                        h4.card-title.font-size-sm 商品購買須知
+                        p.card-text.font-size-sm 產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。
+
+                    .card-body
+                        h4.card-title.font-size-sm 退換貨須知
+                        p.card-text.font-size-sm 依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。
+
+                .col-md-8.order-md-1
+                    .row.d-none.d-md-flex
+                        .col.product-img.product-img-s.mb-4
+                            .img.bgi-center-cover(style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product1.jpg?raw=true')")
+                    .row
+                        .col-md-6.product-img.mb-md-4.mb-3
+                            .img.bgi-center-cover(style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product2.jpg?raw=true')")
+                        .col-md-6.product-img.mb-md-4.mb-3
+                            .img.bgi-center-cover(style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product3.jpg?raw=true')")
+                    .row
+                        .col.product-img.product-img-s.mb-md-4.mb-3
+                            .img.bgi-center-cover(style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product1.jpg?raw=true')")
+
+                .offcanvas.offcanvas-middle(tabindex="-1" aria-labelledby="addWishLabel")#addWish
+                        .offcanvas-header
+                            h4.offcanvas-title.text-primary#offcanvasWithBackdropLabel 已加入購物清單
+                            
+                .offcanvas.offcanvas-middle(tabindex="-1" aria-labelledby="addCarLabel")#addCar
+                    .offcanvas-header
+                        h4.offcanvas-title.text-primary#offcanvasWithBackdropLabel 已加入購物車
+        
+        footer.bg-primary
+            .container-fluid.container-sm.footer
+                .row.justify-content-between.h-100.align-items-center
+                    .col
+                        .d-flex.justify-content-between.justify-content-md-start
+                            a(href="index.html").navbar-brand.d-inline-blick
+                                h1
+                                    img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfumewhite.png?raw=true" alt="logo")
+                            .d-inline-block.align-self-center.text-white.text-nowrap © 2020. All Rights Reserved.
+                    .col.d-none.d-md-flex.justify-content-end.align-items-center
+                        ul.nav
+                            li.nav-item
+                                a.nav-link.text-white(href="shop.html") Product
+                            li.nav-item
+                                a.nav-link.text-white(href="") Blog
+                            li.nav-item
+                                a.nav-link.text-white(href="") Contact
+        
+    //- JS
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous")
+
+            

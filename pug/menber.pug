@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="scss/all.css")
+        title Perfume - menbership
+    body
+        //- navbar
+        nav.navbar.navbar-expand-lg.navbar-light
+            .container-fluid.container-lg
+                a(href="index.html").navbar-brand
+                    h1
+                        img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfume.png?raw=true", alt="logo")
+                div
+                    a.nav-link.position-relative.d-inline-block.d-lg-none.p-0.me-5(href="")
+                        span.material-icons.text-secondary shopping_cart
+                        span.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-primary 3
+                    button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
+                        span.material-icons.text-secondary menu
+                .collapse.justify-content-end.navbar-collapse#navbarNav
+                    ul.navbar-nav.text-center
+                        li.nav-item
+                            a.nav-link.order.order-lg-1(href="shop.html") #[span.d-none.d-lg-inline.material-icons store]Product 
+                        li.nav-item
+                            a.nav-link.order-lg-3(href="") #[span.d-none.d-lg-inline.material-icons favorite]Wishlist
+                        li.nav-item.d-lg-none.d-inline-block
+                            a.nav-link(href="") Blog
+                        li.nav-item.d-lg-none.d-inline-block
+                            a.nav-link(href="") Contact
+                        li.nav-item
+                            a.nav-link.order-lg-2(href="login.html") #[span.d-none.d-lg-inline.material-icons person]log in
+                        li.nav-item.d-none.d-lg-inline-block
+                            a.nav-link.position-relative.order-lg-4(href="") #[span.material-icons shopping_cart]Cart (3)
+ 
+        //- catalog
+        section.container-fluid.bg-primary.d-none.d-lg-block
+            .container
+                ul.nav
+                    li.nav-item
+                        a.nav-link(href="#") CHANEL
+                    li.nav-item
+                        a.nav-link(href="#") Jo Malone
+                    li.nav-item
+                        a.nav-link(href="#") Curology
+                    li.nav-item
+                        a.nav-link(href="#") Dior
+                    li.nav-item
+                        a.nav-link(href="#") Chloe
+                    li.nav-item
+                        a.nav-link(href="#") ZARA
+        
+        main.container.font-size-sm.pt-8.pb-7
+            .row
+                .col-lg-2.order-lg-1
+                    h2.font-size-base.mb-4.text-secondary.d-none.d-lg-inline 會員中心
+                    ul.menber.nav.flex-lg-column.align-items-start.justify-content-between
+                        li.nav-item.mb-4.mt-lg-1
+                            a.nav-link.text-secondary.p-0.font-size-sm.border-bottom.border-primary.border-2(href="") 會員資料修改
+                        li.nav-item.mb-4
+                            a.nav-link.text-secondary.p-0.font-size-sm(href="#") 訂單查詢
+                        li.nav-item.mb-4
+                            a.nav-link.text-secondary.p-0.font-size-sm(href="#") 退／換貨申請
+                .col-lg-3.order-lg-3.mb-8
+                    table.table.text-secondary
+                        thead
+                            tr
+                                th.d-flex.align-items-center(scope="col") #[span.d-none.d-sm-inline.material-icons.text-dark person] 會員編碼
+                                th(scope="col") T00020080615
+                            tr
+                        tbody
+                            tr
+                                td 購物車
+                                td 56
+                            tr
+                                td 我的收藏
+                                td 23
+                            tr
+                                td 完成訂單
+                                td 8
+                            tr
+                                td 會員紅利
+                                td 2680
+                            tr
+                                td.pb-0 邀請碼
+                                td.pb-0 TK2075
+                            tr
+                                td.font-size-xs.py-0.text-third(colspan="2") 新戶輸入邀請碼即可獲贈紅利點數1000點
+                .col-lg-7.order-lg-2
+                    form
+                        fieldset.row.mb-3.border-bottom
+                            legend.pb-2.font-size-sm 個人資料修改
+                        .row.mb-3
+                            label(for="account").col-3.col-lg-2.col-form-label 會員帳號
+                            .col-9.col-lg-7
+                                input(type="text" readonly value="email@example.com").form-control-plaintext#account
+
+                        .row.mb-3
+                            label(for="name").col-3.col-lg-2.col-form-label 會員姓名
+                            .col-9.col-lg-7
+                                input(type="text").form-control#name
+                        .row.mb-3
+                            label.col-3.col-lg-2.col-form-label 會員性別
+                            .col-3.col-lg-4
+                                select.form-select
+                                    option(value="female" selected) 女
+                                    option(value="male") 男
+                                    option(value="other") 其他
+                        .row.mb-3
+                            label(for="email").col-3.col-lg-2.col-form-label 電子信箱
+                            .col-9.col-lg-7
+                                input(type="email").form-control#email
+                        .row.mb-3
+                            label(for="phone").col-3.col-lg-2.col-form-label 手機號碼
+                            .col-9.col-lg-7
+                                input(type="text").form-control#phone
+                        .row.mb-2
+                            label.col-3.col-lg-2.col-form-label 聯絡地址
+                            .col-6.col-lg-4
+                                select.form-select
+                                    option(value="taiwan" selected) 台灣及離島
+                                    option(value="other") 其他
+                        .row.mb-2
+                            .col-3.col-lg-4.offset-3.offset-lg-2
+                                select.form-select
+                                    option(value="kaoshung" selected) 高雄市
+                                    option(value="other") 其他
+                            .col-3.col-lg-4
+                                select.form-select
+                                    option(value="yencheng" selected) 鹽埕區
+                                    option(value="other") 其他
+                        .row.mb-3
+                            .col-9.col-lg-7.offset-3.offset-lg-2
+                                input(type="text" placeholder="請輸入地址").form-control         
+                        .row.mb-3
+                            .col-9.col-lg-7.offset-3.offset-lg-2
+                                .form-check
+                                    input.form-check-input(type="checkbox")#check
+                                    label.form-check-label(for="check") 我願意收到最新優惠情報
+                        .row.mb-2
+                            label.col-3.col-lg-2.col-form-label 配送地址
+                            .col-6.col-lg-4
+                                select.form-select
+                                    option(value="taiwan" selected) 台灣及離島
+                                    option(value="other") 其他
+                        .row.mb-3
+                            .col-3.col-lg-4.offset-3.offset-lg-2
+                                select.form-select
+                                    option(value="kaoshung" selected) 高雄市
+                                    option(value="other") 其他
+                            .col-3.col-lg-4
+                                select.form-select
+                                    option(value="yencheng" selected) 鹽埕區
+                                    option(value="other") 其他
+                        .row.mb-8
+                            .col-6.col-lg-7.offset-3.offset-lg-2.d-grid     
+                                button(type="submit").btn.btn-primary 確定修改
+                    form
+                        fieldset.row.mb-3.border-bottom
+                            legend.py-2.font-size-sm 修改密碼
+                        .row.mb-3
+                            label(for="oldPassword").col-3.col-lg-2.col-form-label 舊密碼
+                            .col-9.col-lg-7
+                                input(type="text").form-control#oldPassword
+                        .row.mb-3
+                            label(for="newPassword").col-3.col-lg-2.col-form-label 新密碼
+                            .col-9.col-lg-7
+                                input(type="text").form-control#newPassword
+                        .row.mb-3
+                            label(for="confirmPassword").col-3.col-lg-2.col-form-label 確認密碼
+                            .col-9.col-lg-7
+                                input(type="text").form-control#confirmPassword
+                        .row
+                            .col-6.col-lg-7.offset-3.offset-lg-2.d-grid     
+                                button(type="submit").btn.btn-primary 變更密碼
+                
+        footer.bg-primary
+            .container-fluid.container-sm.footer
+                .row.justify-content-between.h-100.align-items-center
+                    .col
+                        .d-flex.justify-content-between.justify-content-lg-start
+                            a(href="index.html").navbar-brand.d-inline-blick
+                                h1
+                                    img(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfumewhite.png?raw=true" alt="logo")
+                            .d-inline-block.align-self-center.text-white.text-nowrap © 2020. All Rights Reserved.
+                    .col.d-none.d-lg-flex.justify-content-end.align-items-center
+                        ul.nav
+                            li.nav-item
+                                a.nav-link.text-white(href="shop.html") Product
+                            li.nav-item
+                                a.nav-link.text-white(href="") Blog
+                            li.nav-item
+                                a.nav-link.text-white(href="") Contact
+        
+        //- JS
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous")
+
+
